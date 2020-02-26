@@ -12,7 +12,18 @@ export class RelojComponent {
   totalSegundos:number = 0;
   interval_ID:any = undefined;
 
+  startEnabled = true;
+  pauseEnabled = false;
+  resumeEnabled = false;
+  invertEnabled = false;
+  
   start():void {
+
+    this.startEnabled = false;
+    this.pauseEnabled = true;
+    this.resumeEnabled = false;
+    this.invertEnabled = true;
+
     this.interval_ID = setInterval(() => {
 
       let horas     = ("0" +  Math.floor(this.totalSegundos / 3600)).slice(-2);
@@ -27,10 +38,14 @@ export class RelojComponent {
   }
 
   pause():void {
+    this.pauseEnabled = false;
+    this.resumeEnabled = true;
     clearInterval(this.interval_ID);
   }
 
   resume():void {
+    this.pauseEnabled = true;
+    this.resumeEnabled = false;
     this.start();
   }
 
@@ -39,6 +54,10 @@ export class RelojComponent {
     this.pause();
     this.display = "00:00:00";
     this.incremento = 1;
+    this.startEnabled = true;
+    this.pauseEnabled = false;
+    this.resumeEnabled = false;
+    this.invertEnabled = false;
   }
 
   invert():void {

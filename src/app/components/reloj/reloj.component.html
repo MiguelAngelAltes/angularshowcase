@@ -1,9 +1,10 @@
 <h1>{{display}}</h1>
-<button (click)="start()">start</button>
-<button (click)="pause()">pause</button>
-<button (click)="resume()">resume</button>
-<button (click)="invert()">invert</button>
+<button [disabled]="!startEnabled" (click)="start()">start</button>
+<button [disabled]="!pauseEnabled" (click)="pause()">pause</button>
+<button [disabled]="!resumeEnabled" (click)="resume()">resume</button>
+<button [disabled]="!invertEnabled" (click)="invert()">invert</button>
 <button (click)="reset()">reset</button>
+
 <h2>Monitorización del estado interno del reloj</h2>
 <p>totalSegundos: {{totalSegundos}}</p>
 <p>interval_ID: {{interval_ID}}</p>
