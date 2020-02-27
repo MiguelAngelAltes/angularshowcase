@@ -34,7 +34,7 @@ export class RelojComponent {
 
       this.totalSegundos += this.incremento;
 
-    }, 10);
+    }, 1000);
   }
 
   pause():void {
