@@ -8,8 +8,19 @@ import { Component } from '@angular/core';
 export class BoxComponent {
 
     titulo = "Componente Box";
+    nombre = "Bartolo";
+    numero = 20;
+    recibirPropaganda = true;
+    fechaAlta:Date = new Date();
+    ciudadSeleccionada:string = undefined;
 
+    duplicar():void {
+        this.nombre += this.nombre;
+    }
 
-
+    cambioSelector():void {
+        this.numero--;
+        console.log("La ciudad es: " + this.ciudadSeleccionada);
+    }
 
 }

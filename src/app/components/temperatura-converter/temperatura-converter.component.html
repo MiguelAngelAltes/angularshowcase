@@ -1,0 +1,13 @@
+<h1>Conversor temperaturas</h1>
+
+<input (keyup)="recalcular()" (change)="recalcular()" type="number" [(ngModel)]="temperatura1"/>
+<select (change)="recalcular()" [(ngModel)]="medida1">
+    <option>celsius</option>
+    <option>farenheit</option>
+    <option>kelvin</option>
+</select> son {{temperatura2}}
+<select (change)="recalcular()" [(ngModel)]="medida2">
+    <option>celsius</option>
+    <option>farenheit</option>
+    <option>kelvin</option>
+</select>
