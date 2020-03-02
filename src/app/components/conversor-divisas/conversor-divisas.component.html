@@ -1,0 +1,20 @@
+<h2>Conversor de Divisas</h2>
+
+<input type="text" (keyup)="recalcular('B')" [(ngModel)]="importeA"/>
+<select (change)="recalcular('B')" [(ngModel)]="monedaA">
+    <option>euro</option>
+    <option>dolar</option>
+    <option>libra</option>
+</select>
+<br>
+<input type="text" (keyup)="recalcular('A')" [(ngModel)]="importeB"/>
+<select (change)="recalcular('A')" [(ngModel)]="monedaB">
+    <option>euro</option>
+    <option>dolar</option>
+    <option>libra</option>
+</select>
+
+
+
+
+
