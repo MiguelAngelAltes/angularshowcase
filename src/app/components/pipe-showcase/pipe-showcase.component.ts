@@ -31,6 +31,9 @@ export class PipeShowcaseComponent  {
   fecha_10:Date = new Date(2020,10,10);
   fecha_11:Date = new Date(2020,11,10);
 
+  num1 = 0.123456;
+  num2 = 12345.12345;
+
   
 
 }
