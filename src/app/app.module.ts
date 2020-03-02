@@ -15,9 +15,11 @@ import { TemperaturaConverterComponent }  from './components/temperatura-convert
 // services
 import { ConversorTemperaturaService }    from './services/conversor-temperatura.service';
 import { ConversorDivisasComponent } from './components/conversor-divisas/conversor-divisas.component';
+import { PipeShowcaseComponent } from './components/pipe-showcase/pipe-showcase.component';
+import { CharCounterPipe } from './pipes/char-counter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CalculatorComponent,RelojComponent, BoxComponent, TemperaturaConverterComponent, ConversorDivisasComponent],
+  declarations: [AppComponent, CalculatorComponent,RelojComponent, BoxComponent, TemperaturaConverterComponent, ConversorDivisasComponent, PipeShowcaseComponent, CharCounterPipe],
   imports:      [BrowserModule, FormsModule],
   providers:    [ConversorTemperaturaService],
   bootstrap:    [AppComponent]
