@@ -18,9 +18,10 @@ import { ConversorDivisasComponent } from './components/conversor-divisas/conver
 import { PipeShowcaseComponent } from './components/pipe-showcase/pipe-showcase.component';
 import { CharCounterPipe } from './pipes/char-counter.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { TrimestrePipe } from './pipes/trimestre.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CalculatorComponent,RelojComponent, BoxComponent, TemperaturaConverterComponent, ConversorDivisasComponent, PipeShowcaseComponent, CharCounterPipe, ReversePipe],
+  declarations: [AppComponent, CalculatorComponent,RelojComponent, BoxComponent, TemperaturaConverterComponent, ConversorDivisasComponent, PipeShowcaseComponent, CharCounterPipe, ReversePipe, TrimestrePipe],
   imports:      [BrowserModule, FormsModule],
   providers:    [ConversorTemperaturaService],
   bootstrap:    [AppComponent]
