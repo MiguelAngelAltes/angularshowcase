@@ -13,47 +13,47 @@ export class VendingMachineComponent {
   machine = [
   {
     code:22,
-    producto:new Producto("Palitos Bimbo Aceite Oliva",10323,1.5),
+    producto:new Producto("Palitos Bimbo Aceite Oliva",1.5,10323),
     stock:10
   },
   {
     code:23,
-    producto:new Producto("Patatas Fritas Matutano 100gr",10388,2.0),
+    producto:new Producto("Patatas Fritas Matutano 100gr",2.0,10388),
     stock:10
   },
   {
     code:25,
-    producto:new Producto("Almendras Saladas El Nomo",10388,1.7),
+    producto:new Producto("Almendras Saladas El Nomo",1.7,10388),
     stock:10
   },
   {
     code:27,
-    producto:new Producto("Cacahuetes Salados Les Borges",10399,1.2),
+    producto:new Producto("Cacahuetes Salados Les Borges",1.2,10399),
     stock:10
   },
   {
     code:29,
-    producto:new Producto("Ositos de Goma Baldi",10922,1.2),
+    producto:new Producto("Ositos de Goma Baldi",1.2,10922),
     stock:10
   },
   {
     code:31,
-    producto:new Producto("CocaCola Zero 33cl",10455,1.5),
+    producto:new Producto("CocaCola Zero 33cl",1.5,10455),
     stock:10
   },
   {
     code:32,
-    producto:new Producto("CocaCola Zero 33cl",10455,1.5),
+    producto:new Producto("CocaCola Zero 33cl",1.5,10455),
     stock:10
   },
   {
     code:34,
-    producto:new Producto("Agua Fontvella 33cl",10300,1.2),
+    producto:new Producto("Agua Fontvella 33cl",1.2,10300),
     stock:10
   },
   {
     code:36,
-    producto:new Producto("Agua Fontvella 33cl",10300,1.2),
+    producto:new Producto("Agua Fontvella 33cl",1.2,10300),
     stock:10
   }
 ];
