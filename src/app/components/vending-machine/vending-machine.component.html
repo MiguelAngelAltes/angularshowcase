@@ -1,1 +1,21 @@
-<p>vending-machine works!</p>
+<h2>Vending Machine</h2>
+<div>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tr *ngFor="let hueco of machine">
+            <td>{{hueco.code}}</td>
+            <td>{{hueco.producto.nombre}}</td>
+            <td>{{hueco.producto.precio}}</td>
+            <td>{{hueco.stock}}</td>
+        </tr>
+    </table>
+</div>
+<input type="text" [(ngModel)]="code">
+<button (click)="comprar()">Comprar</button>
+
+

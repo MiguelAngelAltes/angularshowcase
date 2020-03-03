@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Producto } from 'src/app/model/producto';
+import { Component }  from '@angular/core';
+import { Producto }   from 'src/app/model/producto';
 
 @Component({
   selector: 'app-vending-machine',
   templateUrl: './vending-machine.component.html',
   styleUrls: ['./vending-machine.component.css']
 })
-export class VendingMachineComponent implements OnInit {
+export class VendingMachineComponent {
+
+  code:number = undefined;
 
   machine = [
   {
@@ -56,9 +58,27 @@ export class VendingMachineComponent implements OnInit {
   }
 ];
 
-  
+comprar():void{
 
-  ngOnInit(): void {
+  let linea = this.machine.find(x => x.code == this.code);
+
+  if(linea){
+
+    if (linea.stock === 0){
+      // ya veremos qué hacer...
+      console.log("no hay stock");
+    } else {
+      linea.stock--;
+    }
+
+  } else {
+    console.log("codigo no existente");
   }
+
+  this.code = undefined;
+
+}
+
+
 
 }
