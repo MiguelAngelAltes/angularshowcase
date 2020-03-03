@@ -7,3 +7,7 @@ div{
     background-color: #ffdc90;
     margin-bottom: 10px;
 }
+
+.agotado{
+    background-color: red;
+}

@@ -7,7 +7,7 @@
             <th>Price</th>
             <th>Stock</th>
         </tr>
-        <tr *ngFor="let hueco of machine">
+        <tr [ngClass]="{'agotado': hueco.stock===0}" *ngFor="let hueco of machine">
             <td>{{hueco.code}}</td>
             <td>{{hueco.producto.nombre}}</td>
             <td>{{hueco.producto.precio}}</td>
