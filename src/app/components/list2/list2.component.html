@@ -1,11 +1,13 @@
 <h2>Listado de Productos</h2>
 <table>
     <tr>
+        <th>Indice</th>
         <th>Producto</th>
         <th>Precio</th>
         <th>Código</th>
     </tr>
-    <tr *ngFor="let producto of productos">
+    <tr *ngFor="let producto of productos; index as i">
+        <td>{{i + 1}}</td>
         <td>{{producto.nombre}}</td>
         <td>{{producto.precio}}</td>
         <td>{{producto.codigo}}</td>
