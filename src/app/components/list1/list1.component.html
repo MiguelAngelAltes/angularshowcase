@@ -1,0 +1,7 @@
+<h2>Gestión de Nombres</h2>
+<input type="text" [(ngModel)]="nuevoNombre"/>
+<button (click)="insert()">Add</button>
+<p>{{nombres.length}}</p>
+<ul>
+    <li *ngFor="let nombre of nombres">{{nombre}}</li>
+</ul>
