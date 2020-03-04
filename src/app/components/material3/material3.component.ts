@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-material3',
   templateUrl: './material3.component.html',
   styleUrls: ['./material3.component.css']
 })
-export class Material3Component {
+export class Material3Component implements OnInit {
 
-  
-  
+  fechaNacimiento:Date = new Date();
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
