@@ -29,12 +29,13 @@ import { ReversePipe }                    from './pipes/reverse.pipe';
 import { TrimestrePipe }                  from './pipes/trimestre.pipe';
 import { Material1Component }             from './components/material1/material1.component';
 import { Material2Component }             from './components/material2/material2.component';
+import { Material3Component } from './components/material3/material3.component';
 
 @NgModule({
   declarations: [AppComponent, CalculatorComponent,RelojComponent, BoxComponent,
                  TemperaturaConverterComponent, ConversorDivisasComponent, PipeShowcaseComponent, 
                  CharCounterPipe, ReversePipe, TrimestrePipe, List1Component, List2Component, 
-                 VendingMachineComponent, Material1Component, Material2Component],
+                 VendingMachineComponent, Material1Component, Material2Component, Material3Component],
   imports:      [BrowserModule, FormsModule, BrowserAnimationsModule, MatTableModule, MatCardModule],
   providers:    [ConversorTemperaturaService],
   bootstrap:    [AppComponent]
