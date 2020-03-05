@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-material3',
   templateUrl: './material3.component.html',
   styleUrls: ['./material3.component.css']
 })
-export class Material3Component implements OnInit {
+export class Material3Component {
 
-  fechaNacimiento:Date = new Date();
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  nombre = "Pepín";
+  apellido1 = "Gálvez";
+  apellido2 = "Ridruejo";
+  
+  fechaNacimiento:Date = new Date(2020,0,1);
+  
 }

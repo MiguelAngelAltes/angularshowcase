@@ -5,6 +5,7 @@ import { NgModule }                       from '@angular/core';
 import { BrowserModule }                  from '@angular/platform-browser';
 import { BrowserAnimationsModule }        from '@angular/platform-browser/animations';
 import { FormsModule }                    from '@angular/forms';
+import { HttpClientModule}                 from '@angular/common/http';
 
 // módulos de material
 import { MatTableModule }                 from '@angular/material/table';
@@ -28,11 +29,14 @@ import { Material3Component }             from './components/material3/material3
 
 // services
 import { ConversorTemperaturaService }    from './services/conversor-temperatura.service';
+import { Cliente1Service }                from './services/cliente1.service';
 
 // pipes
 import { CharCounterPipe }                from './pipes/char-counter.pipe';
 import { ReversePipe }                    from './pipes/reverse.pipe';
 import { TrimestrePipe }                  from './pipes/trimestre.pipe';
+import { PaisesComponent }                from './components/paises/paises.component';
+import { CancionesComponent } from './components/canciones/canciones.component';
 
 @NgModule({
   declarations: [AppComponent, 
@@ -49,16 +53,17 @@ import { TrimestrePipe }                  from './pipes/trimestre.pipe';
                  List2Component, 
                  VendingMachineComponent, 
                  Material1Component, 
-                 Material3Component],
+                 Material3Component, PaisesComponent, CancionesComponent],
   imports:      [BrowserModule, 
                  FormsModule, 
                  BrowserAnimationsModule,
                  MatNativeDateModule,
                  MatTableModule,
-                  MatDatepickerModule,
-                 MatInputModule
+                 MatDatepickerModule,
+                 MatInputModule,
+                 HttpClientModule,
                  ],
-  providers:    [ConversorTemperaturaService],
+  providers:    [ConversorTemperaturaService, Cliente1Service],
   bootstrap:    [AppComponent]
 })
 export class AppModule { }

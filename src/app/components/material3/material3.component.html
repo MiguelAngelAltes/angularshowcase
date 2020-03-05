@@ -1,37 +1,31 @@
 <h2>Formulario de Alta . (material3)</h2>
 
-<form class="example-form">
-
+<div>
     <mat-form-field class="example-full-width">
         <mat-label>Nombre</mat-label>
-        <input matInput placeholder="Ex. Pepín" value="Sushi">
+        <input matInput [(ngModel)]="nombre" placeholder="Ex. Pepín">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Primer Apellido</mat-label>
-        <input matInput placeholder="Ex. Gálvez" value="Sushi">
+        <input matInput [(ngModel)]="apellido1" placeholder="Ex. Gálvez">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Segundo Apellido</mat-label>
-        <input matInput placeholder="Ex. Ridruejo" value="Sushi">
+        <input matInput [(ngModel)]="apellido2" placeholder="Ex. Ridruejo">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Fecha de Nacimiento</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+        <input matInput [matDatepicker]="fechaNacimiento">
+        <mat-datepicker-toggle matSuffix [for]="fechaNacimiento"></mat-datepicker-toggle>
+        <mat-datepicker #fechaNacimiento></mat-datepicker>
     </mat-form-field>
   
-    
+</div>    
 
-    <!--
-    <mat-form-field class="example-full-width">
-      <mat-label>Leave a comment</mat-label>
-      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-    </mat-form-field>
-    -->
-  </form>
-
+<p>{{nombre}}</p>
+<p>{{apellido1}}</p>
+<p>{{apellido2}}</p>
   

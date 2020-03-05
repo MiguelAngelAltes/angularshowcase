@@ -1,0 +1,23 @@
+<h2>Canciones</h2>
+<table *ngIf="canciones">
+    <tr>
+        <th>Código</th>
+        <th>Título</th>
+        <th>Creada</th>
+        <th>Duración</th>
+    </tr>
+    <tr *ngFor="let cancion of canciones">
+        <td>{{cancion.codigo}}</td>
+        <td>{{cancion.titulo}}</td>
+        <td>{{cancion.creada}}</td>
+        <td>{{cancion.duracion}}</td>
+    </tr>
+</table>
+<hr>
+Código: <input type="number" [(ngModel)]="newCancion.codigo"/><br>
+Título: <input type="text" [(ngModel)]="newCancion.titulo"/><br>
+Creada: <input type="text" [(ngModel)]="newCancion.creada"/><br>
+Duración: <input type="number" [(ngModel)]="newCancion.duracion"/><br>
+<button (click)="crear()">CREAR</button>
+<hr>
+
